@@ -1,0 +1,101 @@
+/* General Styles */
+.course-details-page {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+p {
+  color: white;
+  text-align: center;
+}
+
+/* Section Styles */
+.section {
+  background-color: darkblue;
+  margin: 10px 0;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.section-header {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.section-content {
+  padding: 15px;
+  background-color: #1a1a1a;
+}
+
+.section-content ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section-content li {
+  margin: 10px 0;
+  color: white;
+}
+
+/* Module Styles */
+.module {
+  margin: 10px 0;
+}
+
+.module h3 {
+  color: white;
+  margin-bottom: 10px;
+}
+
+.module ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.module li {
+  margin: 5px 0;
+  color: white;
+}
+
+/* Enroll Button Styles */
+.enroll-button-container {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.enroll-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background-color: #28a745; /* Green for Enroll */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.enroll-button.added {
+  background-color: #6c757d; /* Gray for Added */
+  cursor: not-allowed;
+}
+
+.enroll-button:disabled {
+  background-color: #6c757d; /* Gray for Disabled */
+  cursor: not-allowed;
+}
+
+.enroll-button:hover:not(:disabled) {
+  background-color: #218838; /* Darker green on hover */
+}

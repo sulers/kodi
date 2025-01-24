@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Course } from "../utils/types";
 
 import '../styles/CourseItem.css'
+import { Link } from "react-router-dom";
 
 
 interface CourseItemProps {
@@ -30,9 +31,9 @@ const CourseItem: React.FC<CourseItemProps> = ({ course }) => {
         <div className="course-details">
           <p>{course.description}</p>
           <div className="buttons">
-            <a href={`/course/${course.id}`} className="info-button">
+            <Link to={`/courses/${course.id}`} className="info-button">
               More Info
-            </a>
+            </Link>
             <button
               onClick={handleAddCourse}
               className="add-button"

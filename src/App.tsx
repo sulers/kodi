@@ -6,6 +6,7 @@ import NotFound from "./pages/NotFound";
 
 import { courses } from "./utils/courses";
 import CourseList from "./pages/CourseList";
+import CourseDetails from "./pages/CourseDetails";
 //import { CourseProvider } from "./context/CourseContext";
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFound />} />
         <Route path="/courses" element={<CourseList courses={courses} />} />
+        <Route path="/courses/:courseId" element={<CourseDetails courses={courses} />} />
       </Routes>
     </Router>
     // </CourseProvider>
