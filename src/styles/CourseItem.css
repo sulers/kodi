@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, sans-serif;
+  margin: 10px;
+  padding: 0;
+}
+
+.app {
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+}
+
+/* Course List Styles */
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.course-item {
+  background-color: darkblue;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.course-title {
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+.course-details {
+  padding: 15px;
+  background-color: #1a1a1a;
+}
+
+.course-details p {
+  margin: 0 0 10px 0;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.info-button,
+.add-button {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.info-button {
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+}
+
+.add-button {
+  background-color: #28a745;
+  color: white;
+}
+
+.add-button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
