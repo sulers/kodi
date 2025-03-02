@@ -2,109 +2,183 @@ import { Course } from "./types";
 
 export const courses: Course[] = [
   {
-    id: "courses1",
-    title: "Introduction to React Native",
-    imageUrl: "/images/react-native.png",
-    language: "JavaScript",
-    description:
-      "Learn the basics of React Native and build your first mobile app.",
-    prerequisites: ["Basic JavaScript", "Basic React"],
+    id: "introduction-to-cpp",
+    title: "Introduction to C++",
+    language: "C++",
+    imageUrl: "/cpp.jpg",
+    description: "Jifunze misingi ya C++",
+    prerequisites: [
+      "Kuweza kutumia kompyuta",
+      "Kuwa na exp japo kidogo na kucode",
+    ],
     what_you_learn: [
-      "React Native Components",
-      "State Management",
-      "Navigation",
+      "Kuandika program za kompyuta kwa C++",
+      "Data types in C++",
+      "Loops, conditionals etc",
     ],
     progress: 0,
     modules: [
       {
-        title: "Getting Started with React Native",
-        videoUrl: "https://www.youtube.com/watch?v=Hf4MJH0jDb4",
-        notes: [
-          "React Native allows you to build mobile apps using JavaScript.",
-          "It uses native components instead of web components.",
-        ],
-        code: "const App = () => <Text>Hello React Native!</Text>;",
+        id: "module1",
+        title: "Introduction to C++",
+        videoUrl: "https://youtu.be/ZlV4gJLz3fs?si=485sZon0YjgUo4fL",
+        notes: ["Lorem Ipsum is true", "Lorem Ipsum is false"],
+        code: '#include <iostream>\nusing namespace std;int main() {cout << "Hello, World!" << endl;return 0;}',
         quizzes: [
           {
-            question: "What is React Native?",
+            question:
+              "What is the correct syntax to print 'Hello, World!' in C++?",
             options: [
-              "A web development framework",
-              "A mobile development framework",
-              "A database technology",
+              "print('Hello, World!');",
+              "cout << 'Hello, World!';",
+              "Console.WriteLine('Hello, World!');",
+              "System.out.println('Hello, World!');",
             ],
-            answer: "A mobile development framework",
+            answer: "cout << 'Hello, World!';",
+          },
+          {
+            question:
+              "Which header file is required for input and output in C++?",
+            options: ["stdio.h", "iostream", "stdlib.h", "conio.h"],
+            answer: "iostream",
+          },
+          {
+            question: "What is the entry point of a C++ program?",
+            options: ["start()", "main()", "init()", "run()"],
+            answer: "main()",
+          },
+          {
+            question: 'What is the output of `cout << "1" + "2" << endl;`?',
+            answer: "12",
           },
         ],
-        task: "Create a simple React Native app that displays 'Hello, World!'.",
+        task: "Create a C++ program that prints your name and age",
+      },
+      {
+        id: "module2",
+        title: "Yet another Introduction to C++",
+        videoUrl: "https://youtu.be/ZlV4gJLz3fs?si=485sZon0YjgUo4fL",
+        notes: ["Lorem Ipsum is true", "Lorem Ipsum is false"],
+        code: '#include <iostream>\nusing namespace std;int main() {cout << "Hello, World!" << endl;return 0;}',
+        quizzes: [
+          {
+            question:
+              "What is the correct syntax to print 'Hello, World!' in C++?",
+            options: [
+              "print('Hello, World!');",
+              "cout << 'Hello, World!';",
+              "Console.WriteLine('Hello, World!');",
+              "System.out.println('Hello, World!');",
+            ],
+            answer: "cout << 'Hello, World!';",
+          },
+          {
+            question:
+              "Which header file is required for input and output in C++?",
+            options: ["stdio.h", "iostream", "stdlib.h", "conio.h"],
+            answer: "iostream",
+          },
+          {
+            question: "What is the entry point of a C++ program?",
+            options: ["start()", "main()", "init()", "run()"],
+            answer: "main()",
+          },
+          {
+            question: 'What is the output of `cout << "1" + "2" << endl;`?',
+            answer: "12",
+          },
+        ],
+        task: "Create a C++ program that prints your name and age",
       },
     ],
   },
   {
-    id: "course2",
-    title: "Advanced JavaScript",
-    imageUrl: "/images/download.png",
-    language: "JavaScript",
-    description: "Deep dive into JavaScript and learn advanced concepts.",
-    prerequisites: ["Basic JavaScript"],
-    what_you_learn: ["Closures", "Async/Await", "ES6+ Features"],
+    id: "python-basics",
+    title: "Python Basics",
+    language: "Python",
+    imageUrl: "/python.jpg",
+    description: "An introduction to Python programming",
+    prerequisites: [
+      "Basic computer usage skills",
+      "Familiarity with basic coding concepts",
+    ],
+    what_you_learn: [
+      "Write basic Python programs",
+      "Understanding Python syntax and variables",
+      "Functions, loops, and conditionals in Python",
+    ],
     progress: 0,
     modules: [
       {
-        title: "Understanding Closures",
-        videoUrl: "https://youtu.be/qikxEIxsXco?si=1mBo81hQX2XTyIW6",
+        id: "module1",
+        title: "Introduction to Python",
+        videoUrl: "https://youtu.be/_uQrJ0TkZlc",
         notes: [
-          "A closure is a function that remembers the scope in which it was created.",
-          "Closures help in data privacy and callback handling.",
+          "Introduction to Python syntax",
+          "Data types and variables in Python",
         ],
-        code: "function outer() {\n \tlet count = 0;\n \treturn function inner() {\n \t\tcount++;\n \t\treturn count;\n \t};\n}",
+        code: 'print("Hello, World!")\nname = input("Enter your name: ")\nprint(f"Hello, {name}!")',
         quizzes: [
           {
-            question: "What is a closure in JavaScript?",
-            answer: "A function that retains access to its lexical scope.",
+            question: "Which function is used to output text in Python?",
+            options: ["print()", "echo()", "output()", "println()"],
+            answer: "print()",
           },
           {
-            question: "What is the difference between a function and a closure?",
+            question:
+              "What is the correct syntax to define a function in Python?",
             options: [
-              "A closure is a function that retains access to its lexical scope.",
-              "A function can only be called once.",
-              "A closure is a function that can access variables from its outer scope.",
+              "def function_name():",
+              "function_name() ->",
+              "define function_name():",
+              "func function_name():",
             ],
-            answer: "A closure is a function that retains access to its lexical scope.",
-          }
+            answer: "def function_name():",
+          },
+          {
+            question:
+              "What does the following code output? `x = 5\nprint(x + 3)`",
+            answer: "8",
+          },
         ],
-        task: "Write a function that demonstrates closure behavior.",
+        task: "Write a Python program that asks for the user's age and prints how old they will be in 5 years.",
+      },
+      {
+        id: "module2",
+        title: "Another Introduction to Python",
+        videoUrl: "https://youtu.be/_uQrJ0TkZlc",
+        notes: [
+          "Introduction to Python syntax",
+          "Data types and variables in Python",
+        ],
+        code: 'print("Hello, World!")\nname = input("Enter your name: ")\nprint(f"Hello, {name}!")',
+        quizzes: [
+          {
+            question: "Which function is used to output text in Python?",
+            options: ["print()", "echo()", "output()", "println()"],
+            answer: "print()",
+          },
+          {
+            question:
+              "What is the correct syntax to define a function in Python?",
+            options: [
+              "def function_name():",
+              "function_name() ->",
+              "define function_name():",
+              "func function_name():",
+            ],
+            answer: "def function_name():",
+          },
+          {
+            question:
+              "What does the following code output? `x = 5\nprint(x + 3)`",
+            answer: "8",
+          },
+        ],
+        task: "Write a Python program that asks for the user's age and prints how old they will be in 5 years.",
       },
     ],
   },
 ];
 
-export const userCourses: Course[] = [
-  {
-    id: "course2",
-    title: "Advanced JavaScript",
-    language: "JavaScript",
-    imageUrl: "/images/download.png",
-    description: "Deep dive into JavaScript and learn advanced concepts.",
-    prerequisites: ["Basic JavaScript"],
-    what_you_learn: ["Closures", "Async/Await", "ES6+ Features"],
-    progress: 0,
-    modules: [
-      {
-        title: "Understanding Closures",
-        videoUrl: "https://www.youtube.com/watch?v=qikxEIxsXco",
-        notes: [
-          "A closure is a function that remembers the scope in which it was created.",
-          "Closures help in data privacy and callback handling.",
-        ],
-        code: "function outer() {\n \tlet count = 0;\n \treturn function inner() {\n \t\tcount++;\n \t\treturn count;\n \t};\n}",
-        quizzes: [
-          {
-            question: "What is a closure in JavaScript?",
-            answer: "A function that retains access to its lexical scope.",
-          },
-        ],
-        task: "Write a function that demonstrates closure behavior.",
-      },
-    ],
-  },
-];
+export const userCourses: Course[] = [];

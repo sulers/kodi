@@ -10,16 +10,13 @@ function VideoPlayer({ videoUrl }: VideoPlayerProps) {
     videoUrl.includes("youtube.com") || videoUrl.includes("youtu.be")
       ? videoUrl.split("v=")[1] || videoUrl.split("/").pop()
       : videoUrl;
-
-  console.log("Final Video ID:", videoId); // Debugging
-
   if (!videoId) {
     return <div>Error: Invalid Video URL</div>;
   }
 
   const opts = {
     height: "390",
-    width: "640",
+    width: "auto",
     playerVars: {
       controls: 1,
       disablekb: 1,

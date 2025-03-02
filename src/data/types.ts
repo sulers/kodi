@@ -5,6 +5,7 @@ export interface Quiz {
 }
 
 export interface Module {
+  id: string;
   title: string;
   videoUrl: string;
   notes: string[];

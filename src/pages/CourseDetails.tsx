@@ -1,7 +1,7 @@
 // CourseDetails.jsx
 import { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import { courses } from "../data/data"; // Import courses data
+import { courses, userCourses } from "../data/data"; // Import courses data
 import "../styles/CourseDetails.css";
 
 type SectionType =
@@ -100,7 +100,10 @@ function CourseDetails() {
         </div>
       </div>
 
-      <button className="enroll-button" onClick={() => navigate("/my-courses")}>
+      <button className="enroll-button" onClick={() => {
+        userCourses.push(course);
+        navigate("/my-courses");
+      }}>
         Enroll
       </button>
     </div>
