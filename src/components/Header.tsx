@@ -13,7 +13,7 @@ function Header() {
         </Link>
         <Link to="/profile" className="profile-link">
           <img
-            src="/images/download.jpg" // Replace with your profile icon path
+            src="/kodi/profile.png" // Replace with your profile icon path
             alt="Profile"
             className="profile-icon"
           />

@@ -5,7 +5,7 @@ export const courses: Course[] = [
     id: "introduction-to-cpp",
     title: "Introduction to C++",
     language: "C++",
-    imageUrl: "/cpp.jpg",
+    imageUrl: "/kodi/cpp.jpg",
     description: "Jifunze misingi ya C++",
     prerequisites: [
       "Kuweza kutumia kompyuta",
@@ -96,7 +96,7 @@ export const courses: Course[] = [
     id: "python-basics",
     title: "Python Basics",
     language: "Python",
-    imageUrl: "/python.jpg",
+    imageUrl: "/kodi/python.jpg",
     description: "An introduction to Python programming",
     prerequisites: [
       "Basic computer usage skills",
