@@ -1,0 +1,5 @@
+.video-player {
+  width: 100%;
+  max-width: 640px; /* Adjust as needed */
+  margin: 20px auto;
+}

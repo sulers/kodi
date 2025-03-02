@@ -1,0 +1,52 @@
+/* CourseLearn.css */
+.course-learn-page {
+  padding: 20px;
+}
+
+.course-learn-header {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.course-learn-title {
+  margin: 0;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: bold;
+}
+
+.course-progress {
+  color: #666;
+  margin-top: 5px;
+}
+
+.modules-list {
+  list-style: none;
+  padding: 0;
+}
+
+.module-item {
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  background-color: rgb(211, 205, 205);
+}
+
+.module-item.completed {
+  background-color: #e0f7fa; /* Light blue for completed modules */
+  border-color: #b2ebf2;
+  color: #0097a7;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .course-learn-page {
+    padding: 10px;
+  }
+
+  .course-learn-title {
+    font-size: 1.5rem;
+  }
+}

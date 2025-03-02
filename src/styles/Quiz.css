@@ -1,0 +1,97 @@
+/* General Styles */
+.quiz-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #181818; /* Dark background */
+  color: white;
+  padding: 20px;
+  max-width: 600px;
+  margin: 30px auto;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #f1f1f1;
+}
+
+.options {
+  margin: 20px 0;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #bbb;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+  accent-color: #4CAF50; /* Green accent for radio buttons */
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  background-color: #333;
+  border: 1px solid #444;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4CAF50;
+}
+
+/* Buttons */
+button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Correct and Incorrect Answers */
+.correct {
+  background-color: #28a745; /* Green for correct answers */
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.incorrect {
+  background-color: #dc3545; /* Red for incorrect answers */
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Next button styles */
+button:disabled {
+  background-color: #555;
+  cursor: not-allowed;
+}
+
+button:disabled:hover {
+  background-color: #555;
+}

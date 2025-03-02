@@ -1,0 +1,60 @@
+/* CourseDetails.css */
+.course-details {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.details-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.details-title {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.accordion-button {
+  width: 100%;
+  padding: 15px;
+  background-color: #333;
+  color: white;
+  text-align: left;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+.accordion-content {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  color: #ccc;
+  overflow: hidden;
+}
+
+.enroll-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+@media (max-width: 600px) {
+  .enroll-button {
+    width: 90%;
+    left: 5%;
+    transform: none;
+  }
+}

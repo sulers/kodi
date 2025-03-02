@@ -1,0 +1,65 @@
+/* CourseItem.css */
+.course-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 300px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px auto;
+}
+
+.course-item-link {
+    text-decoration: none;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+  object-fit: cover;
+}
+
+.course-title-container {
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-overflow: ellipsis;
+  height: auto;
+  min-height: 60px;
+  max-height: 120px; /* Increased max-height */
+  overflow-wrap: break-word;
+  text-align: center;
+  padding: 5px; /* Added padding */
+}
+
+.course-title {
+  margin: 0;
+  font-size: 1.1rem;
+  padding: 5px; /* Add some padding to the text itself */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .course-title {
+    font-size: 0.9rem; /* Reduced font size */
+  }
+}
+
+@media (min-width: 768px) {
+  .course-item {
+    width: 45%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .course-item {
+    width: 30%;
+  }
+}

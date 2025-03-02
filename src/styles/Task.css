@@ -1,0 +1,34 @@
+.task-page {
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.task-description {
+  margin-bottom: 20px;
+  text-align: left;
+  color: white;
+}
+
+.complete-button {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .task-page {
+    padding: 10px;
+  }
+
+  .complete-button {
+    padding: 10px 20px;
+    font-size: 0.9rem;
+  }
+}

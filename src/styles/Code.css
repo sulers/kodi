@@ -1,0 +1,5 @@
+.code-snippet {
+  background-color: #282c34; /* Dark background */
+  border-radius: 5px;
+  overflow: auto; /* Allow scrolling if code is too long */
+}

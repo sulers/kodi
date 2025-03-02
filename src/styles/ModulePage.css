@@ -1,0 +1,36 @@
+/* ModulePage.css */
+.module-page {
+  padding: 20px;
+}
+
+.module-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.module-notes {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.module-code {
+  margin-bottom: 20px;
+}
+
+.next-page-button {
+  padding: 15px 30px;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+  .module-page {
+    padding: 10px;
+  }
+}

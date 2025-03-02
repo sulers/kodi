@@ -1,0 +1,47 @@
+/* Header.css (Adjusted) */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px; /* Reduced padding */
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header-title {
+  margin: 0;
+  font-size: 1.2rem; /* Reduced font size */
+  font-weight: bold;
+}
+
+.header-link,
+.profile-link {
+  text-decoration: none;
+  color: #333;
+  margin-left: 10px; /* Reduced margin */
+  font-size: 0.9rem; /* Reduced font size */
+}
+
+.profile-icon {
+  width: 25px; /* Reduced icon size */
+  height: 25px;
+  border-radius: 50%;
+}
+
+/* Further Responsive Adjustments */
+@media (max-width: 480px) {
+  .header-title {
+    font-size: 1rem;
+  }
+
+  .header-link,
+  .profile-link {
+    font-size: 0.8rem;
+    margin-left: 5px; /* Reduced margin */
+  }
+
+  .profile-icon {
+    width: 20px; /* Further reduced icon size */
+    height: 20px;
+  }
+}
